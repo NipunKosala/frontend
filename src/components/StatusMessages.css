@@ -1,0 +1,57 @@
+/* Overall styles for the notification page */
+.notification-page {
+    position: relative;
+    background-image: url('../assets/background.jpg'); 
+    background-size: cover; /* Cover the entire page */
+    background-position: center; /* Center the background */
+    height: 50vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column; /* Stack notifications vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    padding: 20px;
+  }
+  
+  /* Styles for individual notification cards */
+  .notification-card {
+    display: flex;
+    flex-direction: column; /* Stack message and date vertically */
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly opaque white */
+    margin: 15px 0; /* Space between cards */
+    padding: 20px; /* Padding inside each card */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    width: 95%; /* Width of the notification card */
+    /* Maximum width */
+  }
+  
+  /* Styles for the notification message text */
+  .notification-text {
+    font-size: 18px; /* Font size for message */
+    color: #333; /* Dark text color */
+    margin-bottom: 10px; /* Space below the message */
+  }
+  
+  /* Styles for the notification date text */
+  .notification-date {
+    font-size: 14px; /* Smaller font size for the date */
+    color: #777; /* Lighter color for the date */
+    text-align: right; /* Right align the date text */
+  }
+  
+  /* Optional: Add responsiveness */
+  @media (max-width: 768px) {
+    .notification-card {
+      width: 95%; /* Full width on smaller screens */
+    }
+  
+    .notification-text {
+      font-size: 16px; /* Adjust font size for mobile */
+    }
+  
+    .notification-date {
+      font-size: 12px; /* Smaller font size for mobile */
+    }
+  }
+  

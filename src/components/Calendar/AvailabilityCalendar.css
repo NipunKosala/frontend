@@ -1,0 +1,211 @@
+.calendar-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.react-calendar {
+  width: 90%;  
+  max-width: 1000px; 
+  border: none; 
+}
+
+.react-calendar__tile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  width: 75px; 
+  box-sizing: border-box;
+  padding: 5px;
+  font-size: 16px;
+}
+
+.disabled-tile {
+  background-color: #DC143C !important; 
+  color: #d0d0d0; 
+  cursor: not-allowed; 
+  opacity: 0.8;
+}
+
+.react-calendar__month-view__days__day,
+.react-calendar__year-view__months__month,
+.react-calendar__year-view,
+.react-calendar__decade-view__years__year,
+.react-calendar__century-view__decades__decade
+{
+  border-right: 1px solid #758694 !important;
+  border-bottom: 1px solid #758694 !important; 
+  border-top: 1px solid #758694 !important;
+  border-left: 1px solid #758694 !important;
+}
+
+
+.react-calendar__month-view__weekdays {
+  border-top: 1px solid #758694 !important;
+  border-bottom: 1px solid #758694 !important;
+  font-size: 15px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #A91D3A;
+}
+
+.react-calendar__month-view__weekdays__weekday {
+  border-right: 1px solid #758694 !important;
+  border-left: 1px solid #758694 !important;
+}
+
+.react-calendar__month-view__weekdays__weekday abbr{
+  text-decoration: none;
+}
+
+.events-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 5px;
+  width: 100%;
+}
+
+.event-box {
+  width: 85%;
+  padding: 1px; 
+  text-align: center;
+  color: white;
+  border-radius: 4px;
+  margin: 1px 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  white-space: normal;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 35px; 
+  max-height: 80px;
+  word-break: break-word;
+}
+
+.event-box p {
+  margin: 0;
+  padding: 0.2px 0;
+  font-size: 0.7rem;
+  line-height: 1.2;
+}
+
+.button-container {
+  width: 90%;
+  max-width: 1000px;
+  display: flex;
+  justify-content: flex-end; 
+}
+
+.proceed-btn {
+  padding: 10px 15px;
+  background-color: #6256CA;
+  color: white;
+  font-size: 15px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 550;
+  border-radius: 10px;
+  letter-spacing: 0.4px; 
+}
+
+.proceed-btn.disabled {
+  background-color: #DDDDDD;
+  cursor: not-allowed;
+  color: #000000;
+  opacity: 0.6;
+  transition: none;
+}
+
+.proceed-btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.proceed-btn span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.proceed-btn:hover span {
+  padding-right: 18px;
+}
+
+.proceed-btn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.proceed-btn.disabled span {
+  cursor: not-allowed; 
+  transition: none; 
+}
+
+.proceed-btn.disabled:hover span {
+  padding-right: 0px;
+}
+
+.proceed-btn.disabled span:after {
+  opacity: 0; 
+  transition: none; 
+}
+
+.note {
+  font-size: 15px;
+  text-align: left !important; 
+  width: 90%; 
+  max-width: 1000px; 
+  margin: 0 auto; 
+  align-self: flex-start; 
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.react-calendar__navigation button {
+  font-size: 1.2rem;          
+  font-weight: bold;         
+  color: #a61445;               
+  background: none;           
+  cursor: pointer; 
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.react-calendar__navigation button.react-calendar__navigation__prev2-button,
+.react-calendar__navigation button.react-calendar__navigation__next2-button,
+.react-calendar__navigation button.react-calendar__navigation__prev-button,
+.react-calendar__navigation button.react-calendar__navigation__next-button {
+  color: #333;             
+  font-size: 1.5rem;          
+  padding: 5px;             
+}
+
+
+@media (max-width: 768px) {
+  .event-box p {
+    font-size: 0.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .event-box p {
+    font-size: 0.45rem;
+  }
+}
+
+@media (max-width: 374px) {
+  .event-box p {
+    font-size: 0.4rem;
+  }
+  .react-calendar__month-view__weekdays {
+    font-size: 12px;
+  }
+}

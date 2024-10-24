@@ -1,0 +1,43 @@
+.footer {
+    background-color: white; /* Background color for footer */
+    padding: 20px; /* Padding inside the footer */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack the person sections vertically */
+    gap: 20px; /* Space between sections */
+}
+
+.footer-person {
+    display: flex; /* Align image and details horizontally */
+    justify-content: center; /* Center the entire row */
+    align-items: center; /* Center items vertically */
+    gap: 20px; /* Space between image and details */
+}
+
+.footer-image {
+    width: 100px; /* Width of the person image */
+    height: 120px; /* Height of the person image */
+    object-fit: cover; /* Maintain aspect ratio */
+}
+
+.footer-details {
+    text-align: center; /* Center text inside details */
+    flex-grow: 1; /* Make the details take up available space */
+}
+
+.footer-details strong {
+    display: block; /* Display as block for spacing */
+    margin-bottom: 5px; /* Space below strong text */
+    font-size: 14px; /* Font size for strong text */
+}
+
+.footer-details p {
+    font-size: 13px; /* Font size for paragraph text */
+}
+
+/* Divider line between footer persons */
+.footer-divider {
+    width: 100%; /* Full width of the footer */
+    height: 2px; /* Height of the divider */
+    background-color: #bcbcbc; /* Dark red color */
+    margin: 10px 0; /* Margin for spacing above and below the divider */
+}

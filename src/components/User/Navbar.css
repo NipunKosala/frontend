@@ -1,0 +1,87 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #7D0A0A;
+    padding: 10px 20px;
+    color: white;
+  }
+  
+  .navbar-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-logo {
+    height: 50px;
+    margin-right: 15px;
+  }
+  
+  .navbar-title {
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
+  
+  .navbar-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-link {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+  }
+  
+  .navbar-link .icon {
+    margin-right: 8px;
+  }
+  
+  .navbar-link:hover {
+    color: #FFD700;
+  }
+
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 10px;
+    }
+  
+    .navbar-left {
+      margin-bottom: 10px;
+      width: 100%;
+    }
+  
+    .navbar-title {
+      font-size: 1rem; 
+    }
+  
+    .navbar-right {
+      justify-content: flex-start;
+      width: 100%; 
+      margin-top: 10px; 
+      flex-wrap: wrap; 
+    }
+  
+    .navbar-link {
+      margin-left: 10px;
+      font-size: 0.8rem;
+      white-space: nowrap; 
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .navbar-title {
+      font-size: 0.8rem; 
+    }
+  
+    .navbar-link {
+      font-size: 0.7rem; 
+      margin-left: 5px; 
+    }
+  }
+  

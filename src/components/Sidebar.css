@@ -1,0 +1,35 @@
+.sidebar {
+    background-color: #e4e4e4; /* Light gray background */
+    padding: 1rem; /* Padding inside the sidebar */
+    min-width: 200px; /* Minimum width for the sidebar */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+}
+
+.sidebar ul {
+    list-style: none; /* Remove default list style */
+    padding: 0; /* Remove padding */
+}
+
+.sidebar ul li {
+    margin-bottom: 1rem; /* Space between list items */
+    cursor: pointer; /* Change cursor to pointer */
+    font-weight: bold; /* Make text bold */
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    color: #333; /* Darker text color for contrast */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    padding: 20px;
+}
+
+/* Icon styles */
+.sidebar ul li i {
+    margin-right: 10px; /* Space between icon and text */
+    font-size: 20px; /* Icon size */
+    color: black; /* Dark red color for icons */
+}
+
+/* Hover effect for list items */
+.sidebar ul li:hover {
+    background-color: #d0d0d0; /* Change background color on hover */
+    border-radius: 4px; /* Optional: Add rounded corners */
+}

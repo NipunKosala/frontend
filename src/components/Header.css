@@ -1,0 +1,54 @@
+@import '~@fortawesome/fontawesome-free/css/all.css'; /* Import Font Awesome */
+
+.header {
+  background-color: #800000; /* Dark red color */
+  color: white;
+  padding: 20px;
+  display: flex;
+  align-items: center; /* Center items vertically */
+}
+
+.header-logo {
+  flex: 0 0 auto; /* Prevent the logo from growing or shrinking */
+  margin-right: 20px; /* Space between logo and text */
+}
+
+.header h1 {
+  font-size: 24px;
+  margin: 0; /* Remove default margin */
+  flex: 1; /* Allow h1 to take remaining space */
+}
+
+.header-icons {
+  display: flex;
+  align-items: center;
+}
+
+/* Styling for the Font Awesome icons */
+.header-icons span {
+  margin-left: 20px;
+  font-size: 20px;
+  cursor: pointer;
+  color: white; /* Set default icon color */
+}
+
+
+.header-icons span i {
+    font-size: 30px; /* Adjust this value to increase or decrease icon size */
+    color: white; /* Set icon color */
+  }
+
+
+/* Optional: Add styles to make icons inside a circle */
+.header-icons i {
+   /* White background */
+  color:white;           /* Dark red icon color */
+  border-radius: 50%;       /* Circle shape */
+  padding: 10px;            /* Padding inside the circle */
+  font-size: 20px;          /* Adjust the icon size */
+  width: 40px;              /* Fixed width/height for uniformity */
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

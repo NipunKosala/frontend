@@ -1,0 +1,45 @@
+/* EventCalendar.css */
+
+.event-calendar-container {
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background color for the calendar */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin: 20px; /* Margin around the container */
+    width: 1000px;
+  }
+  
+  .rbc-calendar {
+    background-color: white; /* Background color for the calendar */
+    border-radius: 8px; /* Rounded corners */
+  }
+  
+  .rbc-header {
+    background-color: #800000; /* Header background color */
+    color: white; /* Header text color */
+    text-align: center; /* Center text in header */
+  }
+  
+  .rbc-month-view {
+    border: 1px solid #ccc; /* Border for the month view */
+  }
+  
+  .rbc-event {
+    background-color: #007bff; /* Default event color */
+    color: white; /* Event text color */
+    border-radius: 5px; /* Rounded corners for events */
+    padding: 10px; /* Padding inside events */
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+    cursor: pointer; /* Pointer cursor on hover */
+  }
+  
+  .rbc-event:hover {
+    background-color: #0056b3; /* Darker color on hover */
+  }
+  
+  .rbc-selected {
+    background-color: #ff0000; /* Selected event color */
+  }
+  

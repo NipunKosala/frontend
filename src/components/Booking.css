@@ -1,0 +1,108 @@
+.app-cont {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+}
+
+  /* White Card Container for Pending Reservation Requests */
+  .card-background {
+    position: relative; 
+    max-width: 400px; 
+    background-color: white; 
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); 
+    margin: 0 auto;
+    top: 50px;
+    
+  }
+  
+
+  .card-background {
+    padding: 20px;                 
+    border-radius: 10px;           
+    text-align: center;             
+  }
+
+  .availability-section {
+    background-image: url("../assets/background.jpg"); 
+    background-size: cover;        
+    background-position: center;   
+    border-radius: 10px;            
+    text-align: center;             
+    width: 1250px;
+    height: 300px;
+  }
+
+
+
+.availability-button {
+  padding: 10px 20px;
+  background-color: #800000;
+  color: white;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.booking-info-section {
+  margin-bottom: 40px;
+}
+
+.booking-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.booking-table th, .booking-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.booking-table th {
+  background-color: #800000;
+  color: white;
+}
+
+.seating-plan-section {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.seating-plan-img {
+  width: 80%;
+  max-width: 600px;
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+.contact-info-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.contact-person {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.person-image {
+  width: 100px;
+  height: 120px;
+  object-fit: cover;
+}
+
+.person-details {
+  flex-grow: 1;
+}
+
+.person-details strong {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 5px;
+}

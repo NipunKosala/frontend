@@ -1,0 +1,111 @@
+.homepage {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .top-section {
+    position: relative;
+    width: 100%;
+    height: 30vh; 
+    overflow: hidden;
+  }
+  
+  .top-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    filter: brightness(55%);
+  }
+  
+  .check-availability-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    color: black;
+    background-color: #D4D7DD;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .check-availability-btn:hover {
+    background-color: #007BFF;
+    color: white;
+  }
+  
+  .rate-card-section {
+    margin: 50px 0;
+  }
+  
+  .rate-card-section h2 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: #992E24;
+  }
+  
+  .rate-card-image {
+    max-width: 80%;
+    height: auto;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .floor-plan-section {
+    margin: 50px 0;
+  }
+  
+  .floor-plan-section h2 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: #992E24;
+  }
+  
+  .floor-plan-image {
+    max-width: 50%;
+    height: auto;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: rotate(90deg);
+    position: relative; 
+    top: -200px; 
+  }
+  
+  
+  @media screen and (max-width: 768px) {
+    .check-availability-btn {
+      font-size: 1rem;
+      padding: 10px 20px;
+    }
+  
+    .rate-card-image{
+      max-width: 90%;
+    }
+
+    .floor-plan-image {
+        max-width: 60%;
+        top: -120px;
+      }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .check-availability-btn {
+      font-size: 0.9rem;
+      padding: 8px 16px;
+    }
+  
+    .rate-card-image {
+      max-width: 95%;
+    }
+
+    .floor-plan-image {
+        max-width: 60%;
+        top: -50px;
+      }
+  }
+  
